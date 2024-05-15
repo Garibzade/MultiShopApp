@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x5yE9SI8AWaHr6AAL1wE16T4ujocGXAQuZRB0evbQUkOp7IxBix3T+61dfK/iZ0WcCGILrHikbWX8SVz9JQRag==",
+  "dgSpecHash": "Vj3BrK8DHKu+KAIDP7hkU/JKBdf4Kqqh/DyZEVLBKGVkbpvL+LbYClo2jxg8m6GfL/OIcKW7wrX2YXgxCEPAZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Qarib\\Desktop\\MultiShop-master\\MultiShop\\MultiShop.csproj",
+  "projectFilePath": "C:\\Users\\Qarib\\Desktop\\MultiShop\\MultiShop\\MultiShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Qarib\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Qarib\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
