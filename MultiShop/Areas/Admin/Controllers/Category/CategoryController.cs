@@ -89,31 +89,38 @@ namespace MULTISHOP.Areas.Admin.Controllers
         {
             if (id is null || id<1)
             {
-                BadRequest();
+              return  BadRequest();
 
             }
             Category category = await _context.Categories.FirstOrDefaultAsync();
             if (category is null)
             {
-                NotFound();
+                return NotFound();
             }
             category.Name=vm.Name;
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
         }
-       
 
 
-        //public async Task<IActionResult> DeleteCategory(int? id)
-        //{
-        //    if (id == null || id < 1) return BadRequest();
-        //    var delS = await _context.Categories.FindAsync(id);
-        //    if (delS == null) return BadRequest();
-        //    _context.Categories.Remove(delS);
-        //    await _context.SaveChangesAsync();
-        //    return RedirectToAction(nameof(Index));
-        //}
 
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id is null || id<1)
+            {
+               return BadRequest();
+            }
+            var delete = await _context.Categories.FindAsync(id);
+            if (delete is null)
+            {
+                return NotFound();
+            }
+            _context.Categories.Remove(delete);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+        
     }
 }
