@@ -9,7 +9,7 @@ namespace MultiShop.DataAccesLayer
         {
         }
 
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<Categories> Categories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
